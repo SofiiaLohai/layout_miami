@@ -1,4 +1,3 @@
-@use 'extends';
-@use 'mixins';
-@use 'reset';
-@use 'vars';
+@forward 'mixins';
+@forward 'reset';
+@forward 'vars';

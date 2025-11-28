@@ -1,0 +1,9 @@
+.header {
+  background-color: black;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  &__title {
+    padding-top: 200px;
+  }
+}
