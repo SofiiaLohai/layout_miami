@@ -1,0 +1,49 @@
+@use '../utils/utils' as *;
+
+.menu {
+  background-color: $red-color;
+  min-height: 100vh;
+
+  box-sizing: border-box;
+  padding: 25px 20px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 130px);
+  column-gap: 20px;
+  justify-content: center;
+
+  &__navigation {
+    margin-bottom: 40px;
+    grid-column: span 2;
+  }
+
+  &__links {
+    margin-bottom: 32px;
+    grid-column: span 2;
+  }
+
+  &__contacts {
+    margin-bottom: 16px;
+
+    grid-column: span 2;
+  }
+
+  &__call-link {
+    font-family: Cinzel, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: $white-color;
+
+    border-bottom: 1px solid transparent;
+    padding-bottom: 8px;
+
+    &:hover {
+      border-bottom: 1px solid $white-color;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@use '../utils/utils' as *;
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &__location {
+    font-family: Cinzel, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    text-transform: uppercase;
+
+    color: $white-color;
+  }
+
+  &__phone {
+    font-family: Cinzel, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: $white-color;
+  }
+}
