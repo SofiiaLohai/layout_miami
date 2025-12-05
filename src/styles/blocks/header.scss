@@ -5,15 +5,14 @@
   background-size: cover;
 
   min-height: 100vh;
-
   box-sizing: border-box;
-
   padding: 25px 20px;
 
   display: grid;
   grid-template-columns: repeat(2, 130px);
   column-gap: 20px;
   justify-content: center;
+
   grid-template-rows: auto 1fr;
 
   &__navigation {
