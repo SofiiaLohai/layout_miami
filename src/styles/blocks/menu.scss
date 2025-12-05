@@ -14,10 +14,7 @@
 
   background-color: $red-color;
 
-  display: grid;
-  grid-template-columns: repeat(2, 130px);
-  column-gap: 20px;
-  justify-content: center;
+  @include grid;
 
   &:target {
     transform: translateX(0);
