@@ -1,3 +1,5 @@
+@use '../utils/utils' as *;
+
 .navigation {
   display: flex;
   align-items: center;
@@ -6,5 +8,9 @@
   &__icons {
     display: flex;
     gap: 24px;
+
+    @include for-desktop {
+      gap: 55px;
+    }
   }
 }
