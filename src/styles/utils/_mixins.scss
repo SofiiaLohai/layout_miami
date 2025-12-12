@@ -8,9 +8,20 @@
   width: 1px;
 }
 
+@mixin for-desktop() {
+  @media (min-width: 1260px) {
+    @content;
+  }
+}
+
 @mixin grid() {
   display: grid;
   grid-template-columns: repeat(2, 130px);
   column-gap: 20px;
   justify-content: center;
+
+  @include for-desktop {
+    grid-template-columns: repeat(12, 63px);
+    column-gap: 24px;
+  }
 }
