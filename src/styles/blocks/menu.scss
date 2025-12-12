@@ -18,6 +18,10 @@
 
   align-content: start;
 
+  @include for-desktop {
+    padding: 50px;
+  }
+
   &:target {
     transform: translateX(0);
   }
@@ -25,23 +29,36 @@
   &__navigation {
     margin-bottom: 40px;
     grid-column: span 2;
+
+    @include for-desktop {
+      margin-bottom: 55px;
+      grid-column: span 12;
+    }
   }
 
   &__links {
     margin-bottom: 32px;
     grid-column: span 2;
+
+    @include for-desktop {
+      margin-bottom: 48px;
+      grid-column: span 12;
+    }
   }
 
   &__contacts {
     margin-bottom: 16px;
-
     grid-column: span 2;
+
+    @include for-desktop {
+      grid-column: span 12;
+    }
   }
 
   &__call-link {
     font-family: Cinzel, sans-serif;
-    font-weight: 700;
-    font-size: 12px;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-tiny;
     line-height: 16px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -49,11 +66,12 @@
 
     color: $white-color;
 
-    border-bottom: 1px solid transparent;
+    border-bottom: 1px solid $white-color;
     padding-bottom: 8px;
 
-    &:hover {
-      border-bottom: 1px solid $white-color;
+    @include for-desktop {
+      grid-column: span 12;
+      width: fit-content;
     }
   }
 }

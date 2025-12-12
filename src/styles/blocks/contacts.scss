@@ -7,8 +7,8 @@
 
   &__location {
     font-family: Cinzel, sans-serif;
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-body;
     line-height: 27px;
     text-transform: uppercase;
 
@@ -17,8 +17,8 @@
 
   &__phone {
     font-family: Cinzel, sans-serif;
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-body;
     line-height: 27px;
     text-transform: uppercase;
     text-decoration: none;

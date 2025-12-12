@@ -10,12 +10,19 @@
 
   &__link {
     font-family: Cinzel, sans-serif;
-    font-weight: 700;
-    font-size: 22px;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-nav-link;
     line-height: 22px;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
     color: $white-color;
+
+    border-bottom: 1px solid transparent;
+    padding-bottom: 8px;
+
+    &:hover {
+      border-bottom: 1px solid $white-color;
+    }
   }
 }
