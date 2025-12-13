@@ -30,7 +30,10 @@
     ></script>
   </head>
   <body>
-    <header class="header" id="home">
+    <header
+      class="header"
+      id="home"
+    >
       <nav class="navigation header__navigation">
         <a
           class="logo navigation__item"
@@ -44,28 +47,43 @@
         </a>
 
         <div class="navigation__icons">
-          <a
-            class="phone navigation__item"
-            href="#contact-us"
-          >
-            <span class="phone__label">Contact us</span>
-            <img
-              class="phone__icon"
-              src="./src/images/Icon-Phone-call.svg"
-              alt="Phone"
-            />
-          </a>
+          <div class="phone navigation__item">
+            <a href="#contact-us">
+              <img
+                class="phone__icon"
+                src="./src/images/Icon-Phone-call.svg"
+                alt="Phone"
+              />
+            </a>
+
+            <div class="phone__label">
+              <div class="phone__info">
+                <p class="phone__location">The Met Fifth Avenue</p>
+                <a
+                  class="phone__number"
+                  href="tel:+1 212-535-7710"
+                >
+                  +1 212-535-7710
+                </a>
+              </div>
+
+              <div class="phone__info">
+                <p class="phone__location">The Met Cloisters</p>
+                <a
+                  class="phone__number"
+                  href="tel:+1 212-923-3700"
+                >
+                  +1 212-923-3700
+                </a>
+              </div>
+            </div>
+          </div>
 
           <a
             class="burger navigation__item"
             href="#menu"
           >
             <span class="burger__label">Open menu</span>
-            <!-- <img
-              class="burger__icon"
-              src="./src/images/Icon-Burger-menu.svg"
-              alt="Logo"
-            /> -->
           </a>
         </div>
       </nav>
