@@ -7,12 +7,19 @@
 
   &__header {
     grid-column: span 2;
-
     text-align: center;
+
+    @include for-desktop {
+      grid-column: 4 / 10;
+    }
   }
 
   &__article {
     grid-column: span 2;
+
+    @include for-desktop {
+      grid-column: span 12;
+    }
 
     display: flex;
     flex-direction: column;
@@ -26,7 +33,10 @@
 
   &__button {
     grid-column: span 2;
-
     margin-top: -8px;
+
+    @include for-desktop {
+      grid-column: 5 / 9;
+    }
   }
 }
