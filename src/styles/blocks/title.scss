@@ -12,6 +12,10 @@
 
   color: $white-color;
 
+  @include for-tablet {
+    font-size: $font-size-h1-tablet;
+  }
+
   @include for-desktop {
     font-size: $font-size-h1-desktop;
   }

@@ -9,7 +9,7 @@
     display: flex;
     gap: 24px;
 
-    @include for-desktop {
+    @include for-tablet {
       gap: 55px;
     }
   }
