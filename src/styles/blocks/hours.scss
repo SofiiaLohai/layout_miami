@@ -1,6 +1,14 @@
+@use '../utils/utils' as *;
+
 .hours {
+  @include grid;
+
   &__header {
     margin-bottom: 32px;
+
+    @include for-desktop {
+      grid-column: 1 / 6;
+    }
   }
 
   &__location {
@@ -9,6 +17,10 @@
     gap: 16px;
 
     margin-bottom: 24px;
+
+    @include for-desktop {
+      grid-column: 6 / 13;
+    }
   }
 
   &__schedule {

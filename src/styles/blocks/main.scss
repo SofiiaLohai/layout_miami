@@ -1,5 +1,11 @@
+@use '../utils/utils' as *;
+
 .main {
   &__section {
     padding: 100px 20px 0;
+
+    @include for-desktop {
+      padding: 140px 120px 0;
+    }
   }
 }
