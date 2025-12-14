@@ -69,4 +69,12 @@
   &--bold {
     font-weight: $font-weight-bold;
   }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--red {
+    color: $red-color;
+  }
 }
