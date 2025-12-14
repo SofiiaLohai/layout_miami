@@ -1,0 +1,19 @@
+@use '../utils/utils' as *;
+
+.button {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+
+  height: 56px;
+  line-height: 56px;
+  background-color: $red-color;
+
+  &:hover {
+    background-color: $dark-red-color;
+  }
+
+  &:active {
+    background-color: $light-red-color;
+  }
+}

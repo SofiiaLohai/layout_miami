@@ -61,6 +61,8 @@
   font-size: $font-size-body;
   line-height: 27px;
 
+  color: $dark-color;
+
   &--cinzel {
     font-family: Cinzel, sans-serif;
     font-weight: $font-weight-regular;
@@ -70,11 +72,11 @@
     font-weight: $font-weight-bold;
   }
 
-  &--center {
-    text-align: center;
-  }
-
   &--red {
     color: $red-color;
+  }
+
+  &--white {
+    color: $white-color;
   }
 }
