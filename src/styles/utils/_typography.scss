@@ -37,7 +37,7 @@
 
     color: $dark-color;
 
-    @include for-desktop {
+    @include for-tablet {
       font-size: $font-size-h2-desktop;
     }
   }
