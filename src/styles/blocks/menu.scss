@@ -18,8 +18,8 @@
 
   align-content: start;
 
-  @include for-desktop {
-    padding: 50px;
+  @include for-tablet {
+    padding: 32px;
   }
 
   &:target {
@@ -29,6 +29,11 @@
   &__navigation {
     margin-bottom: 40px;
     grid-column: span 2;
+
+    @include for-tablet {
+      margin-bottom: 40px;
+      grid-column: span 6;
+    }
 
     @include for-desktop {
       margin-bottom: 55px;
@@ -40,6 +45,11 @@
     margin-bottom: 32px;
     grid-column: span 2;
 
+    @include for-tablet {
+      margin-bottom: 32px;
+      grid-column: span 6;
+    }
+
     @include for-desktop {
       margin-bottom: 48px;
       grid-column: span 12;
@@ -49,6 +59,10 @@
   &__contacts {
     margin-bottom: 16px;
     grid-column: span 2;
+
+    @include for-tablet {
+      grid-column: span 6;
+    }
 
     @include for-desktop {
       grid-column: span 12;
@@ -68,6 +82,11 @@
 
     border-bottom: 1px solid $white-color;
     padding-bottom: 8px;
+
+    @include for-tablet {
+      grid-column: span 6;
+      width: fit-content;
+    }
 
     @include for-desktop {
       grid-column: span 12;
