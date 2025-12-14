@@ -1,5 +1,5 @@
 @use '../styles/utils/utils';
-@use '../styles/blocks/title.scss';
+@use '../styles/utils/typography';
 @use '../styles/blocks/header.scss';
 @use '../styles/blocks/navigation.scss';
 @use '../styles/blocks/phone.scss';
@@ -9,3 +9,5 @@
 @use '../styles/blocks/close.scss';
 @use '../styles/blocks/links.scss';
 @use '../styles/blocks/contacts.scss';
+@use '../styles/blocks/main.scss';
+@use '../styles/blocks/hours.scss';
