@@ -4,8 +4,8 @@
   &__section {
     padding: 100px 20px 0;
 
-    @include for-desktop {
-      padding: 140px 120px 0;
+    @include for-tablet {
+      padding: 140px 72px 0;
     }
   }
 }
