@@ -45,14 +45,18 @@
   &--article {
     font-size: $font-size-h3;
     line-height: 30px;
-
-    color: $dark-color;
   }
 
   &--small {
     font-size: $font-size-body;
     line-height: 27px;
+  }
 
+  &--red {
+    color: $red-color;
+  }
+
+  &--dark {
     color: $dark-color;
   }
 }
