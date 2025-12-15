@@ -3,13 +3,32 @@
 .explore-more {
   @include grid;
 
-  row-gap: 48px;
+  row-gap: 40px;
+
+  @include for-desktop {
+    row-gap: 48px;
+  }
 
   &__header {
     text-align: center;
-    margin-bottom: -8px;
 
     grid-column: span 2;
+
+    @include for-desktop {
+      grid-column: 4 / 10;
+    }
+  }
+
+  &__content {
+    @include grid;
+
+    row-gap: 48px;
+
+    grid-column: span 2;
+
+    @include for-desktop {
+      grid-column: span 12;
+    }
   }
 
   &__article {
@@ -19,8 +38,16 @@
 
     grid-column: span 2;
 
+    @include for-desktop {
+      grid-column: span 4;
+      gap: 32px;
+    }
+
     &-text {
+      display: flex;
+      flex-direction: column;
       text-align: center;
+      gap: 4px;
     }
   }
 }
