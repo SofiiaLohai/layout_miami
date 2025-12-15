@@ -67,6 +67,10 @@
 
   color: $dark-color;
 
+  &--label  {
+    font-size: $font-size-small;
+  }
+
   &--cinzel {
     font-family: Cinzel, sans-serif;
     font-weight: $font-weight-regular;
