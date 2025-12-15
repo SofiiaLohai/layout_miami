@@ -68,6 +68,11 @@
     font-weight: $font-weight-regular;
   }
 
+  &--roboto {
+    font-family: Roboto, sans-serif;
+    font-weight: $font-weight-regular;
+  }
+
   &--bold {
     font-weight: $font-weight-bold;
   }
