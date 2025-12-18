@@ -8,6 +8,10 @@
   &__header {
     grid-column: span 2;
     text-align: center;
+
+    @include for-desktop {
+      grid-column: 1 / 13;
+    }
   }
 
   &__block {
@@ -15,6 +19,10 @@
     display: flex;
     flex-direction: column;
     row-gap: 16px;
+
+    @include for-desktop {
+      grid-column: span 3;
+    }
   }
 
   &__address {
@@ -31,5 +39,9 @@
 
   &__form {
     grid-column: span 2;
+
+    @include for-desktop {
+      grid-column: 8 / 13;
+    }
   }
 }
