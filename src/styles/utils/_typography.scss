@@ -64,10 +64,11 @@
 .text {
   font-size: $font-size-body;
   line-height: 27px;
+  text-decoration: none;
 
   color: $dark-color;
 
-  &--label  {
+  &--label {
     font-size: $font-size-small;
   }
 
@@ -91,5 +92,13 @@
 
   &--white {
     color: $white-color;
+  }
+
+  &--hover {
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $dark-red-color;
+    }
   }
 }

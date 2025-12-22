@@ -46,5 +46,9 @@
     text-transform: uppercase;
     text-decoration: none;
     color: $white-color;
+
+    &:hover {
+      color: $dark-red-color;
+    }
   }
 }
